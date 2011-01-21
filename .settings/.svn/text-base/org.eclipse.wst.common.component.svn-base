@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="webzapper-server">
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/target/apt_generated"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/resources"/>
+        <dependent-module deploy-path="/WEB-INF/lib" handle="module:/resource/webzapper-protocol/webzapper-protocol">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module deploy-path="/WEB-INF/lib" handle="module:/resource/webzapper-api/webzapper-api">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module deploy-path="/WEB-INF/lib" handle="module:/resource/webzapper-crawler/webzapper-crawler">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="webzapper-server"/>
+        <property name="java-output-path" value="/webzapper-server/src/main/webapp/WEB-INF/classes"/>
+    </wb-module>
+</project-modules>
